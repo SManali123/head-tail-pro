@@ -1,65 +1,69 @@
-#HEAD AND TAIL created by Manali Shetye
-This is linux Head and Tail command implementation in C.
-# Features
-I have included the following features of Head and Tail in my project
-- Prints n number of first lines
-- Prints n number last lines
-- If file is empty then prints file is empty
-- IF file not specified then prints eror message
+# HEAD TAIL
+
+#### Manali Shetye - 141608011
+
+# Description
+This is linux Head and tail command implementation in C.
+
+I have included the following features of head in my project
+- Prints first 10 lines when given a file name.
+- prints n number of first lines when given -n number along with file name.
+- prints first n bytes of file when -c number is used.
+- never prints headers identifying file names when -q is used.
+- -v prints headers indentifying file name.
+- Prints last 10 lines when given a file name.
+- prints n number of last lines when given -n number along with file name.
+- prints last n bytes of file when -c number is used.
+- when given 2 files it displayys first 10 lines of both the files along with their header.
+
 
 ## Usage
 
 ```
-head filename number 
+head [OPTION] .... [FILES] ...
 ```
-tail filename number
 
 ## Example
 
-./head filename.txt  10
-./tail filename.txt  10
-
-#### filename.txt
+#### test.txt
 ```
-A text stream consists of 
-a sequence of lines , 
-each line ends with 
-newline character. 
-If the system does not 
-operate that way,the library 
-does whatever is necessary to 
-make it appear as if it does.
+THIS LINE IS THE 1ST UPPER CASE LINE IN THIS FILE.
+this line is the 1st lower case line in this file.
+This Line Has All Its First Character Of The Word With Upper Case.
 
+Two lines above this line is empty.
+And this is the last line.
+```
 
-
-start
+#### Syntax
+```
+head [OPTION] filename
+```
 
 #### Command
 ```
-./head filename.txt 6
+head -n 4 test.txt
 ```
-./tail filename.txt 
 
 #### Output
 ```
-head command 
+THIS LINE IS THE 1ST UPPER CASE LINE IN THIS FILE.
+this line is the 1st lower case line in this file.
+This Line Has All Its First Character Of The Word With Upper Case.
 
-A text stream consists of 
-a sequence of lines , 
-each line ends with 
-newline character. 
-If the system does not 
-operate that way,the library 
 ```
-tail command
- 
-make it appear as if it does.
-does whatever is necessary to
-operate that way,the library 
-If the system does not
-newline character
-each line ends with
+#### Syntax
+```
+tail [OPTION] filename
+```
+#### Command
+```
+tail -n 4 test.txt
+```
+#### Output
+```
+This Line Has All Its First Character Of The Word With Upper Case.
 
-
-
- start
+Two lines above this line is empty.
+And this is the last line.
+```

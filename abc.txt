@@ -1,0 +1,22 @@
+THIS LINE IS THE 1ST UPPER CASE LINE IN THIS FILE.
+this line is the 1st lower case line in this file.
+This Line Has All Its First Character Of The Word With Upper Case.
+
+Two lines above this line is empty.
+
+
+file has many lines
+
+head command prints 10 lines by default
+
+uppercase U
+lowercase L
+
+
+
+And this is the last line.
+
+
+
+
+
