@@ -1,3 +1,3 @@
-project.o: tail.c
-	cc  -c tail.c
-	cc tail.o -o project
+project.o: head.c
+	cc  -c head.c
+	cc head.o -o project
